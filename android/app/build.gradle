@@ -1,4 +1,5 @@
 apply plugin: "com.android.application"
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
 
 import com.android.build.OutputFile
 
@@ -134,6 +135,7 @@ android {
     compileSdkVersion rootProject.ext.compileSdkVersion
 
     defaultConfig {
+        multiDexEnabled true
         vectorDrawables.useSupportLibrary = true
         applicationId "com.nckh"
         minSdkVersion rootProject.ext.minSdkVersion
@@ -257,6 +259,18 @@ android {
 }
 
 dependencies {
+    implementation 'com.google.firebase:firebase-core:16.0.5'
+    implementation 'com.google.firebase:firebase-auth:16.0.5'
+    implementation 'com.google.firebase:firebase-database:16.0.5'
+    implementation 'com.google.firebase:firebase-auth:9.2.1'
+    implementation 'com.google.firebase:firebase-storage:19.1.0'   
+    implementation 'com.google.firebase:firebase-core:17.0.0'
+    implementation 'com.google.firebase:firebase-ml-vision:17.0.0'
+
+    implementation (project(':react-native-text-detector')) {
+        exclude group: 'com.google.firebase'
+    }
+
     implementation fileTree(dir: "libs", include: ["*.jar"])
 
     //noinspection GradleDynamicVersion
@@ -319,3 +333,7 @@ def isNewArchitectureEnabled() {
     // - Set an environment variable `ORG_GRADLE_PROJECT_newArchEnabled=true`
     return project.hasProperty("newArchEnabled") && project.newArchEnabled == "true"
 }
+
+apply plugin: 'com.google.gms.google-services'
+googleServices { disableVersionCheck = true }
+// com.google.gms.googleservices.GoogleServicesPlugin.config.disableVersionCheck = true

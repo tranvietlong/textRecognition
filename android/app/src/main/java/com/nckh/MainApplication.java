@@ -13,6 +13,7 @@ import com.facebook.soloader.SoLoader;
 import com.nckh.newarchitecture.MainApplicationReactNativeHost;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
+import com.fetchsky.RNTextDetector.RNTextDetectorPackage;
 
 public class MainApplication extends NavigationApplication {
 
@@ -25,6 +26,7 @@ public class MainApplication extends NavigationApplication {
 
         @Override
         protected List<ReactPackage> getPackages() {
+          new RNTextDetectorPackage();
           @SuppressWarnings("UnnecessaryLocalVariable")
           List<ReactPackage> packages = new PackageList(this).getPackages();
           // Packages that cannot be autolinked yet can be added manually here, for example:

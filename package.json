@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@react-native-firebase/app": "17.0.0",
+    "Tesseract-OCR-iOS": "https://github.com/parallaxe/Tesseract-OCR-iOS.git#macos-support",
     "react": "18.0.0",
     "react-native": "0.69.9",
     "react-native-image-crop-picker": "0.38",

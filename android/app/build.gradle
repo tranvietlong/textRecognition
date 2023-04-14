@@ -266,6 +266,8 @@ dependencies {
     implementation 'com.google.firebase:firebase-storage:19.1.0'   
     implementation 'com.google.firebase:firebase-core:17.0.0'
     implementation 'com.google.firebase:firebase-ml-vision:17.0.0'
+    implementation 'com.google.android.gms:play-services-base:18.2.0'
+    implementation 'com.google.android.gms:play-services-tflite-java:16.0.1'
 
     implementation (project(':react-native-text-detector')) {
         exclude group: 'com.google.firebase'

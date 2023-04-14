@@ -89,7 +89,9 @@ const textDetector = () => {
   useEffect(() => {
     (async () => {
       if (imageUri) {
+        // console.log('img', imageUri);
         const result = await RNTextDetector.detectFromUri(imageUri.path);
+        console.log('rs', result);
         setText(result);
       }
     })();
@@ -99,7 +101,7 @@ const textDetector = () => {
 
   return (
     <SafeAreaView style={styles.screen}>
-      <Text style={styles.title}>Text Recognition</Text>
+      <Text style={styles.title}>Text Detector</Text>
       <View>
         <TouchableOpacity style={styles.button} onPress={openCamera}>
           <Text style={styles.buttonText}>Take Photo</Text>

@@ -1,9 +1,9 @@
 import {Navigation} from 'react-native-navigation';
 import App from './App';
-import textDetector from './src/screen/textDetector';
+// import textDetector from './src/screen/textDetector';
 
 Navigation.registerComponent('Home', () => App);
-Navigation.registerComponent('textDetector', () => textDetector);
+// Navigation.registerComponent('textDetector', () => textDetector);
 
 Navigation.events().registerAppLaunchedListener(() => {
   Navigation.setDefaultOptions({
@@ -52,27 +52,27 @@ Navigation.events().registerAppLaunchedListener(() => {
               ],
             },
           },
-          {
-            stack: {
-              children: [
-                {
-                  component: {
-                    name: 'textDetector',
-                    options: {
-                      topBar: {
-                        title: {
-                          text: 'Text Detector',
-                        },
-                      },
-                      bottomTab: {
-                        text: 'Text Detector',
-                      },
-                    },
-                  },
-                },
-              ],
-            },
-          },
+          // {
+          //   stack: {
+          //     children: [
+          //       {
+          //         component: {
+          //           name: 'textDetector',
+          //           options: {
+          //             topBar: {
+          //               title: {
+          //                 text: 'Text Detector',
+          //               },
+          //             },
+          //             bottomTab: {
+          //               text: 'Text Detector',
+          //             },
+          //           },
+          //         },
+          //       },
+          //     ],
+          //   },
+          // },
         ],
       },
     },

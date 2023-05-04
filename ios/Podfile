@@ -1,8 +1,6 @@
 require_relative '../node_modules/react-native/scripts/react_native_pods'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
-pod 'RNTextDetector', path: '../node_modules/react-native-text-detector/ios'
-pod 'TesseractOCRiOS', path: '../node_modules/Tesseract-OCR-iOS'
 pod 'Firebase', :modular_headers => true
 pod 'FirebaseCore', :modular_headers => true
 pod 'GoogleUtilities', :modular_headers => true

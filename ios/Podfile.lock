@@ -518,11 +518,7 @@ PODS:
     - React-Core
     - React-RCTImage
     - TOCropViewController
-  - RNTextDetector (0.0.6):
-    - React
-    - TesseractOCRiOS (~> 4.0.0)
   - SocketRocket (0.6.0)
-  - TesseractOCRiOS (4.0.0)
   - TOCropViewController (2.6.1)
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
@@ -591,8 +587,6 @@ DEPENDENCIES:
   - ReactNativeNavigation (from `../node_modules/react-native-navigation`)
   - "RNFBApp (from `../node_modules/@react-native-firebase/app`)"
   - RNImageCropPicker (from `../node_modules/react-native-image-crop-picker`)
-  - RNTextDetector (from `../node_modules/react-native-text-detector/ios`)
-  - TesseractOCRiOS (from `../node_modules/Tesseract-OCR-iOS`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -705,10 +699,6 @@ EXTERNAL SOURCES:
     :path: "../node_modules/@react-native-firebase/app"
   RNImageCropPicker:
     :path: "../node_modules/react-native-image-crop-picker"
-  RNTextDetector:
-    :path: "../node_modules/react-native-text-detector/ios"
-  TesseractOCRiOS:
-    :path: "../node_modules/Tesseract-OCR-iOS"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -781,13 +771,11 @@ SPEC CHECKSUMS:
   ReactNativeNavigation: d79d9d53e6025851936bb8b3d13760b86302a669
   RNFBApp: 151740ff792187ea3d1bb90283388eaae60ca681
   RNImageCropPicker: 648356d68fbf9911a1016b3e3723885d28373eda
-  RNTextDetector: bcbfed60c7d2a8f455314955a519fae6d5ab921a
   SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
-  TesseractOCRiOS: f51bbcd27d84b9ac59950790413a7e4219e84483
   TOCropViewController: edfd4f25713d56905ad1e0b9f5be3fbe0f59c863
   Yoga: 7a4d48cfb35dfa542151e615fa73c1a0d88caf21
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 2b80abd181a45869388ee614c59f4ca2f5c0eb63
+PODFILE CHECKSUM: 14f7f11e65e117fc4bff4e4b8718a5b51e366f8a
 
 COCOAPODS: 1.12.0
